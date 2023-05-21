@@ -194,8 +194,8 @@ class NewVersion {
       final parsed = json.decode(param);
       final data = parsed['data'];
 
-      storeVersion = data[1][2][140][0][0][0];
-      releaseNotes = data[1][2][144][1][1];
+      storeVersion = data[1]?[2]?[140]?[0]?[0]?[0];
+      releaseNotes = data[1]?[2]?[144]?[1]?[1];
     }
 
     return VersionStatus._(
